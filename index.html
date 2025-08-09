@@ -259,6 +259,64 @@
             box-shadow: 0 12px 35px rgba(21, 101, 192, 0.3);
         }
 
+        /* About Me Section */
+        .about-section {
+            margin: 30px 0;
+            animation: aboutAppear 1s ease-out 1.5s both;
+        }
+
+        @keyframes aboutAppear {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        #aboutMe {
+            width: 100%;
+            min-height: 100px;
+            padding: 20px;
+            border: 2px solid rgba(33, 150, 243, 0.2);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            color: #1565c0;
+            font-size: 1rem;
+            font-family: inherit;
+            resize: vertical;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        #aboutMe:focus {
+            outline: none;
+            border-color: #2196f3;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 8px 25px rgba(33, 150, 243, 0.2);
+            transform: translateY(-2px);
+        }
+
+        #aboutMe::placeholder {
+            color: rgba(21, 101, 192, 0.6);
+            font-style: italic;
+        }
+
+        .char-count {
+            text-align: right;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            color: #1976d2;
+            opacity: 0.8;
+        }
+
+        #charCount {
+            font-weight: 600;
+        }
+
         /* Wave animation at bottom */
         .waves {
             position: fixed;
@@ -323,4 +381,4 @@
         <div class="hero-section">
             <div class="profile-container">
                 <div class="glow-ring"></div>
-                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0PDw8NDQ8PDg0NDw0ODw8NDw8NFRUWFhUVFRUYHSggGBolGxUVIjEhJykrLi4uFx8zODMsNygtLisBCgoKDg0OFxAQGy0gICUtLS0rKyswLS0rKy0tLS0tLSstLS0tKy0tKy0tLS0rLS0yLSstLS0tLSstLS0tLS0tLf/AABEIALcBEwMBIgACEQEDEQH/xAAbAAEBAAMBAQEAAAAAAAAAAAAAAQQFBgIHA//EAD0QAAIBAgQCBwUFBwQDAAAAAAABAgMRBAUSITFBBiJRYXGBkRMyobHBI0JScsEHM2KCkuHwFEOi8RYkU//EABkBAQADAQEAAAAAAAAAAAAAAAABAgMEBf/EACkRAQACAQMCBgICAwAAAAAAAAABAgMRITEEEhMUMkFRgSLwI2FCUnH/2gAMAwEAAhEDEQH/ANoAD23jAAAAFAAAAAABAAFAgKQAAAAAABAAFAgKAIUACAoCEBSBIAAgAAEBQSPIAAFIABQAAAAACgAAAAAAAAoIEKAAAAAAAAAAAAAAAQFAEKABLgoA8AoJAAAAAABQAAAAApAhQAAAAAAAAUCAFAgKAICgCAAAAAAKQACkAAADyVJvZK77FufniKjhCclFycYykorjJpXscZWznMaikqmGoVKcn+6nRhWjbv33ItbRetJs+hYfK8RU92nfxlGL9GzJ/wDHsZ/8v+cPqfLHnCjJSqYHD02owhqowr4OWmLUopOMrKziuXI7vL/2q05NRqYatqe32Mo1rvuTsc9sm30iP37bxjx+8z+/TaTyTFx40J/y2l8mYdahOm+vCcPzRcfmdVl3SmhXsrzpy0xn7OrF0pqDbSbXL3X6G4w+YUql1vJd6unsn4czPzVo5hfy1Z4l85sD6FXyPA4hXUIwe/WpPQ/RbM02N6H1
+                <img src="https://en.wikipedia.org/wiki/Boeing_777#/media/File:Cathay_Pacific_Boeing_777-200;_B-HNL@HKG.jpg">
